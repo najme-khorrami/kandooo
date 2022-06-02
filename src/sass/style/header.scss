@@ -1,9 +1,23 @@
 header{
-    z-index: 99999;
+    z-index: 3;
     .hover-shadow{
         transition: .3s;
         &:hover{
             box-shadow: 0 .5rem 1rem rgba($primary, .75);
+        }
+    }
+}
+#button-search{
+    position: absolute;
+    top: -8px;
+    left: -23px;
+    z-index: 3;
+}
+@include media-breakpoint-up(sm) {
+    .modal{
+        .input-group{
+            max-width: 470px;
+            margin: auto;
         }
     }
 }

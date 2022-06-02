@@ -11,6 +11,55 @@
 </head>
 
 <body class="Site">
+    <!-- search-modal -->
+      <div class="modal fade justify-content-center align-items-center" id="myModal" tabindex="-1" aria-labelledby="login-dialog-label" role="dialog" aria-hidden = "true">
+        <div class="modal-dialog modal-fullscreen-sm-down modal-xl">
+          <div class="modal-content border-0 p-4 position-relative">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+              <div class="input-group mb-5 bg-secondary rounded-pill position-relative" style="height: 56px;">
+                <input type="search" class="form-control bg-secondary border-0 outline-0 rounded-pill" placeholder="پيدا کردن کسب و کارها، برندها، شرکت ها، و افراد..." style="height: 56px;">
+                <button class="btn search-btn" type="button" id="button-search"><img src="./images/search-btn.png" alt=""></button>
+              </div>
+              <div>
+                <span class="fs-5 py-3 text-gray">جستجو بر اساس دسته‌بندی</span>
+                <div class="row row-cols-auto mt-2">
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">طراحی UI</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">نوشت افزار</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">املاک</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">خودرو</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">عکاسی و فیلم‌برداری</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">نقاشی</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">مد و فشن</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">رستوران</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">موسیقی</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">پوست و زیبایی</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">معماری و مهندسی</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2"> دسته‌بندی ۱۲</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2"> دسته‌بندی ۱۳</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2"> دسته‌بندی ۱۴</a>
+                </div>
+              </div>
+              <div class="mt-3">
+                <span class="fs-5 py-3 text-gray">جستجو بر اساس شهر</span>
+                <div class="row row-cols-auto mt-2">
+                  <a href="#" class="col py-2 px-3 bg-primary rounded-3 text-black text-nowrap m-2"><img src="./images/radar-2.png" alt="">
+                    اطراف من</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">تهران</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">کرج</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">شيراز</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">اصفهان</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">مشهد</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">قم</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">گيلان</a>
+                  <a href="#" class="col py-2 px-3 bg-search-btn rounded-3 text-black text-nowrap m-2">اهواز</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- search-modal-end -->
     <header class="position-sticky top-0 bg-light align-items-center">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between">
@@ -26,7 +75,7 @@
                 <div class="d-flex align-items-center">
                     <div class="p-2 position-relative">
                         <a href="#">
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
                                 <img src="../images/Polygon1.png" alt="">
                                 <img src="../images/search-normal.png" class="position-absolute top-50 start-50 translate-middle" alt="">
                             </button>

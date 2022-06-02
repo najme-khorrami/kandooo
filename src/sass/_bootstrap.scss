@@ -8,7 +8,8 @@ $theme-colors: (
         "white": $white,
         "light": $light,
         "black": $black,
-        "gray": $gray
+        "gray": $gray,
+        "search-btn": $search-btn
 );
 
 @each $color, $value in $theme-colors {

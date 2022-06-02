@@ -3,3 +3,33 @@ main.page{
         height: 270px;
     }
 }
+@include media-breakpoint-only(md) {
+    .box-3{
+        transform: translateY(-4rem);
+    }
+    .box-4{
+        transform: translateY(-1rem);
+    }
+    .box-5{
+        transform: translateY(-8rem);
+    }
+    .box-6{
+        transform: translateY(-2rem);
+    }
+}
+@include media-breakpoint-up(lg) {
+    .box-5{
+        transform: translateY(-6rem);
+    }
+    .box-6{
+        transform: translateY(-1.5rem);
+    }
+}
+@include media-breakpoint-up(xxl) {
+    .box-5{
+        transform: translateY(-4rem);
+    }
+    .box-6{
+        transform: translateY(-1rem);
+    }
+}
